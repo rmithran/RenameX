@@ -4,10 +4,10 @@ try:
     from .tconfig import Config
 except ImportError:
     class Config:
-        DATABASE_URL = [str, ""]
-        API_HASH = [str, "abcdedf......"]
-        API_ID = [int, 1234567]
-        BOT_TOKEN = [str, "bot:token here"]
+        DATABASE_URL = [str, "postgres://dbjgyptwueelox:2eb8918d06aa8039f80df7c4f3de36785dcee12e006019be0f4a5cb5e0d6684f@ec2-52-30-92-209.eu-west-1.compute.amazonaws.com:5432/d648r8um0vev2s"]
+        API_HASH = [str, "8b0473750d327598c8585b0049f09e2d"]
+        API_ID = [int, 6309305]
+        BOT_TOKEN = [str, "1962266386:AAFRatdcvflwfotaXDVIz-YcvaQzu3VVFDQ"]
         COMPLETED_STR = [str, "▰"]
         REMAINING_STR = [str, "▱"]
         MAX_QUEUE_SIZE = [int, 5]
@@ -15,13 +15,13 @@ except ImportError:
         IS_MONGO = [bool, False]
 
         # Access Restriction
-        IS_PRIVATE = [bool, False]
+        IS_PRIVATE = [bool, True]
         AUTH_USERS = [list,[123456789]]
         OWNER_ID = [int, 0]
 
         # Public username url or invite link of private chat
-        FORCEJOIN = [str,""]
-        FORCEJOIN_ID = [int,-100123465978]
+        FORCEJOIN = [str,"False"]
+        FORCEJOIN_ID = [int,0]
 
         TRACE_CHANNEL = [int, 0]
 
