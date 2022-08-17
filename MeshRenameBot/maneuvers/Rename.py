@@ -40,7 +40,7 @@ class RenameManeuver(DefaultManeuver):
         self._media_message.from_user = self._cmd_message.from_user
 
         try:
-            new_caption = self._cmd_message.caption
+            new_caption = self._media_message.caption
         except:
             pass
 
@@ -190,7 +190,7 @@ class RenameManeuver(DefaultManeuver):
                     duration=duration,
                     performer=perfo,
                     thumb=thumb_path,
-                    caption=new_caption,
+                    caption=new_file_name,
                     progress=progress_for_pyrogram,
                     progress_args=(
                         f"Uploading the file {new_file_name}",
@@ -233,7 +233,7 @@ class RenameManeuver(DefaultManeuver):
                     width=width,
                     height=height,
                     thumb=thumb_path,
-                    caption=new_caption,
+                    caption=new_file_name,
                     progress=progress_for_pyrogram,
                     progress_args=(
                         f"Uploading the file {new_file_name}",
@@ -251,7 +251,7 @@ class RenameManeuver(DefaultManeuver):
                     self._cmd_message.chat.id,
                     ndl_path,
                     thumb=thumb_path,
-                    caption=new_caption,
+                    caption=new_file_name,
                     force_document=is_force,
                     progress=progress_for_pyrogram,
                     progress_args=(
