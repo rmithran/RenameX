@@ -16,7 +16,7 @@ from ..translations.trans import Trans
 from ..core.thumb_manage import get_thumbnail
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-from .replacer import RE1,RE,RE3,RE4,RE5,REPLACED
+from .replacer import RE1, RE2, RE3, RE4, RE5, REPLACED
 # Diff File
 
 renamelog = logging.getLogger(__name__)
