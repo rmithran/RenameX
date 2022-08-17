@@ -39,6 +39,11 @@ class RenameManeuver(DefaultManeuver):
         
         self._media_message.from_user = self._cmd_message.from_user
 
+        try:
+            new_caption = self._cmd_message.caption
+        except:
+            pass
+            
         is_video = False
         is_audio = False
 
