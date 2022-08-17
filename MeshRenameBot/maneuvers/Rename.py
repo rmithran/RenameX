@@ -41,6 +41,7 @@ class RenameManeuver(DefaultManeuver):
 
         try:
             new_caption = self._media_message.caption
+            new_caption = new_caption.replace('@Team_HDT','').replace('@TamilMob_LinkZz','')
         except:
             pass
 
