@@ -43,7 +43,7 @@ class RenameManeuver(DefaultManeuver):
             new_caption = self._cmd_message.caption
         except:
             pass
-            
+
         is_video = False
         is_audio = False
 
@@ -190,7 +190,7 @@ class RenameManeuver(DefaultManeuver):
                     duration=duration,
                     performer=perfo,
                     thumb=thumb_path,
-                    caption=new_file_name,
+                    caption=new_caption,
                     progress=progress_for_pyrogram,
                     progress_args=(
                         f"Uploading the file {new_file_name}",
@@ -233,7 +233,7 @@ class RenameManeuver(DefaultManeuver):
                     width=width,
                     height=height,
                     thumb=thumb_path,
-                    caption=new_file_name,
+                    caption=new_caption,
                     progress=progress_for_pyrogram,
                     progress_args=(
                         f"Uploading the file {new_file_name}",
@@ -251,7 +251,7 @@ class RenameManeuver(DefaultManeuver):
                     self._cmd_message.chat.id,
                     ndl_path,
                     thumb=thumb_path,
-                    caption=new_file_name,
+                    caption=new_caption,
                     force_document=is_force,
                     progress=progress_for_pyrogram,
                     progress_args=(
