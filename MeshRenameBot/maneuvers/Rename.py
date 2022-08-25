@@ -166,7 +166,8 @@ class RenameManeuver(DefaultManeuver):
             
             renamelog.info(f"Is force {is_force} is audio {is_audio} is video {is_video}")
             
-            new_file_name="**"+new_caption+"**"  # Bold caption
+            new_file_name="**"+new_file_name+"**"  # Bold caption
+            new_caption="**"+new_caption+"**"  # Bold caption
             
             if is_audio and not is_force:
                 try:
@@ -195,7 +196,7 @@ class RenameManeuver(DefaultManeuver):
                     duration=duration,
                     performer=perfo,
                     thumb=thumb_path,
-                    caption=new_file_name,
+                    caption=new_caption,
                     progress=progress_for_pyrogram,
                     progress_args=(
                         f"Uploading the file {new_file_name}",
@@ -238,7 +239,7 @@ class RenameManeuver(DefaultManeuver):
                     width=width,
                     height=height,
                     thumb=thumb_path,
-                    caption=new_file_name,
+                    caption=new_caption,
                     progress=progress_for_pyrogram,
                     progress_args=(
                         f"Uploading the file {new_file_name}",
@@ -256,7 +257,7 @@ class RenameManeuver(DefaultManeuver):
                     self._cmd_message.chat.id,
                     ndl_path,
                     thumb=thumb_path,
-                    caption=new_file_name,
+                    caption=new_caption,
                     force_document=is_force,
                     progress=progress_for_pyrogram,
                     progress_args=(
