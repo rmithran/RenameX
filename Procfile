@@ -1,1 +1,3 @@
-worker: python -m MeshRenameBot
+build:
+  docker:
+      worker: Dockerfile
